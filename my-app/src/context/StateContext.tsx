@@ -18,7 +18,7 @@ export const useStateContext = () => {
   const context = useContext(StateContext)
 
   if (context === undefined) {
-    throw new Error('Context should be bounded inside provider')
+    throw new Error('Context should be bounded inside the provider')
   }
   return context
 }
